@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead">
+        <script type="text/javascript">
+            var clockElement = document.getElementById('clock');
+        
+            function clock() {
+                var date = new Date();
+        
+                // Replace '400px' below with where you want the format to change.
+                if (window.matchMedia('(max-width: 400px)').matches) {
+                    // Use this format for windows with a width up to the value above.
+                    clockElement.textContent = date.toLocaleString();
+                } else {
+                    // While this format will be used for larger windows.
+                    clockElement.textContent = date.toString();
+                }
+            }
+        
+            setInterval(clock, 1000);
+        </script>
+      </p>
+
+    </header>
+    <div class="container">
+   
+    </div>
+    <body>
+      <div class="container planner-container">
+  
+          <header class="jumbotron">
+              <h1 class="daily">Daily Planner<i class="fa fa-pencil" aria-hidden="true"></i></h1><br>
+             
+              <p id="currentDay" class="lead text-center"></p>
+            </header>
+          
+        
+          <div class="row" id="9am-row">
+              <div class="col-1 col-xs-1 hour" id="time-block 9am-hour">
+                  9am
+              </div>
+              <textarea id="9am-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
+              <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+          </div>
+  
+          <div class="row" id="10am-row">
+              <div class="col-1 col-xs-1 hour" id="time-block 10am-hour">
+                  10am
+              </div>
+              <textarea id="10am-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
+              <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+          </div>
+  
+          <div class="row" id="11am-row">
+              <div class="col-1 col-xs-1 hour" id="time-block 11am-hour">
+                  11am
+              </div>
+              <textarea id="11am-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
+              <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+          </div>
+  
+          <div class="row" id="12pm-row">
+              <div class="col-1 col-xs-1 hour" id="time-block 12pm-hour">
+                  12pm
+              </div>
+              <textarea id="12pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
+              <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+          </div>
+  
+          <div class="row" id="1pm-row">
+              <div class="col-1 col-xs-1 hour" id="time-block 1pm-hour">
+                  1pm
+              </div>
+              <textarea id="1pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
+              <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+          </div>
+  
+          <div class="row" id="2pm-row">
+              <div class="col-1 col-xs-1 hour" id="time-block 2pm-hour">
+                  2pm
+              </div>
+              <textarea id="2pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
+              <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+          </div>
+  
+          <div class="row" id="3pm-row">
+              <div class="col-1 col-xs-1 hour" id="time-block 3pm-row">
+                  3pm
+              </div>
+              <textarea id="3pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
+              <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+          </div>
+  
+          <div class="row" id="4pm-row">
+              <div class="col-1 col-xs-1 hour" id="time-block 4pm-row">
+                  4pm
+              </div>
+              <textarea id="4pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
+              <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+          </div>
+  
+          <div class="row" id="5pm-row">
+              <div class="col-1 col-xs-1 hour" id="time-block 5pm-row">
+                  5pm
+              </div>
+              <textarea id="5pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
+              <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+          </div>
+
+          <div class="row" id="6pm-row">
+            <div class="col-1 col-xs-1 hour" id="time-block 6pm-row">
+                6pm
+            </div>
+            <textarea id="6pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
+            <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+        </div>
+
+        <div class="row" id="7pm-row">
+          <div class="col-1 col-xs-1 hour" id="time-block 7pm-row">
+              7pm
+          </div>
+          <textarea id="7pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
+          <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+      </div>
+
+      <div class="row" id="8pm-row">
+        <div class="col-1 col-xs-1 hour" id="time-block 8pm-row">
+            8pm
+        </div>
+        <textarea id="8pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
+        <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+    </div>
+
+    <div class="row" id="9pm-row">
+      <div class="col-1 col-xs-1 hour" id="time-block 9pm-row">
+          9pm
+      </div>
+      <textarea id="9pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
+      <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+  </div>
+         
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
+</html>
